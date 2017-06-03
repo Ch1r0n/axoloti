@@ -3,8 +3,14 @@ set -e
 
 export PATH=${axoloti_runtime}/platform_osx/gcc-arm-none-eabi-6-2017-q1-update/bin:${axoloti_runtime}/platform_osx/bin:$PATH
 
+echo "$PATH"
 echo $PATH
-ls ${axoloti_runtime}/platform_linux/gcc-arm-none-eabi-6-2017-q1-update/bin
+echo "ls ${axoloti_runtime}"
+ls ${axoloti_runtime}
+echo "ls ${axoloti_runtime}/platform_osx"
+ls ${axoloti_runtime}/platform_osx
+echo "${axoloti_runtime}/platform_osx/gcc-arm-none-eabi-6-2017-q1-update"
+ls ${axoloti_runtime}/platform_osx/gcc-arm-none-eabi-6-2017-q1-update
 
 echo "Compiling firmware... ${axoloti_firmware}"
 cd "${axoloti_firmware}"

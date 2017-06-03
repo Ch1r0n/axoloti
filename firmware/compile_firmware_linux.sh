@@ -4,7 +4,10 @@ set -e
 export PATH=${axoloti_runtime}/platform_linux/gcc-arm-none-eabi-6-2017-q1-update/bin:${axoloti_runtime}/platform_linux/bin:$PATH
 
 echo $PATH
-ls ${axoloti_runtime}/platform_linux/gcc-arm-none-eabi-6-2017-q1-update/bin
+echo "ls ${axoloti_runtime}/platform_linux"
+ls ${axoloti_runtime}/platform_linux
+echo "ls ${axoloti_runtime}/platform_linux/gcc-arm-none-eabi-6-2017-q1-update"
+ls ${axoloti_runtime}/platform_linux/gcc-arm-none-eabi-6-2017-q1-update
 
 cd "${axoloti_firmware}"
 make -f Makefile.patch clean
